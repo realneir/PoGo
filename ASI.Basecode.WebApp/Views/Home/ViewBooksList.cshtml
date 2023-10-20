@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ASI.Basecode.Data.Models.Book>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <!-- Add Books button on the upper right -->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="@Url.Action("Create", "Book")" class="btn btn-primary">Add Books</a>
+    </div>
+
+    @if (Model.Any())
+    {
+        <div id="bookListContainer">
+            <div class="border p-3 mb-3">
+                <!-- List View of Books -->
+                <ul class="list-group">
+                    @foreach (var book in Model)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            @book.title
+                            <div>
+                                <a href="@Url.Action("Edit", "Book", new { id = book.bookID })" class="btn btn-warning mr-2">Edit</a>
+                                <a href="@Url.Action("Delete", "Book", new { id = book.bookID })" class="btn btn-danger">Delete</a>
+                            </div>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="text-center">
+            <p>No books available. Please add a book to view the list.</p>
+        </div>
+    }
+</div>
