@@ -23,7 +23,6 @@ namespace ASI.Basecode.Data.Repositories
             return Task.FromResult(book);
         }
 
-
         public bool BookExists(int bookID)
         {
             return this.GetDbSet<Book>().Any(x => x.Id == bookID);

@@ -11,7 +11,6 @@ namespace ASI.Basecode.Data.Models
         public int genreID { get; set; }
         public string genreName { get; set; }
 
-
         public virtual ICollection<Book> Books { get; set; }
     }
 }
