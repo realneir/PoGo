@@ -1,10 +1,10 @@
-﻿using ASI.Basecode.Data.Models;
-using ASI.Basecode.Services.Interfaces;
-using ASI.Basecode.Services.Manager;
-using ASI.Basecode.Services.ServiceModels;
-using ASI.Basecode.WebApp.Authentication;
-using ASI.Basecode.WebApp.Models;
-using ASI.Basecode.WebApp.Mvc;
+﻿using Data.Models;
+using Services.Interfaces;
+using Services.Manager;
+using Services.ServiceModels;
+using PogoAdmin.Authentication;
+using PogoAdmin.Models;
+using PogoAdmin.Mvc;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -14,9 +14,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using System.Threading.Tasks;
-using static ASI.Basecode.Resources.Constants.Enums;
+using static Resources.Constants.Enums;
 
-namespace ASI.Basecode.WebApp.Controllers
+namespace PogoAdmin.Controllers
 {
     public class AccountController : ControllerBase<AccountController>
     {

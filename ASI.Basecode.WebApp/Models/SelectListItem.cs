@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ASI.Basecode.WebApp.Models
+namespace PogoAdmin.Models
 {
     /// <summary>
     /// Select Dropdown List Model

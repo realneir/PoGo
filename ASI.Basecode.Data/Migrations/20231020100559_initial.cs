@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ASI.Basecode.Data.Migrations
+namespace Data.Migrations
 {
     /// <inheritdoc />
     public partial class initial : Migration

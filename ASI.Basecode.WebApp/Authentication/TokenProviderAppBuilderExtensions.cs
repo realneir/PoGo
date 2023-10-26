@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Options;
 using System;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// Adds a token generation endpoint to an application pipeline.

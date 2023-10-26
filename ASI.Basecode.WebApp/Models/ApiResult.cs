@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using static ASI.Basecode.Resources.Constants.Enums;
+using static Resources.Constants.Enums;
 
-namespace ASI.Basecode.WebApp.Models
+namespace PogoAdmin.Models
 {
     /// <summary>
     /// ApiResult

@@ -1,7 +1,7 @@
 ﻿using System.IO;
-using ASI.Basecode.Data;
-using ASI.Basecode.WebApp;
-using ASI.Basecode.WebApp.Extensions.Configuration;
+using Data;
+using PogoAdmin;
+using PogoAdmin.Extensions.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

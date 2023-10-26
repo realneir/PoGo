@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using ASI.Basecode.Data.Models;
+using Data.Models;
 
-namespace ASI.Basecode.Data
+namespace Data
 {
     public partial class AsiBasecodeDBContext : DbContext
     {

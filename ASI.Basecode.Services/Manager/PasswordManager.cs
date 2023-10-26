@@ -4,7 +4,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ASI.Basecode.Services.Manager
+namespace Services.Manager
 {
     /// <summary>
     /// Password Manager

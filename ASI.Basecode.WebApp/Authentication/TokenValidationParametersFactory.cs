@@ -2,10 +2,10 @@
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
-using ASI.Basecode.WebApp.Extensions.Configuration;
-using ASI.Basecode.Resources.Constants;
+using PogoAdmin.Extensions.Configuration;
+using Resources.Constants;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// Token Validation

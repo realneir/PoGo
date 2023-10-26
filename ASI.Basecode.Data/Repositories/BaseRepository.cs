@@ -1,9 +1,9 @@
-﻿using ASI.Basecode.Data;
-using ASI.Basecode.Data.Interfaces;
+﻿using Data;
+using Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Basecode.Data.Repositories
+namespace Data.Repositories
 {
     public class BaseRepository
     {

@@ -1,0 +1,5 @@
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.Services\obj\Debug\net7.0\Services.csproj.AssemblyReference.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.Services\obj\Debug\net7.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.Services\obj\Debug\net7.0\Services.AssemblyInfoInputs.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.Services\obj\Debug\net7.0\Services.AssemblyInfo.cs
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.Services\obj\Debug\net7.0\Services.csproj.CoreCompileInputs.cache

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ASI.Basecode.Data.Interfaces
+namespace Data.Interfaces
 {
     /// <summary>
     /// Unit of Work Interface

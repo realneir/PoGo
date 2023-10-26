@@ -1,4 +1,4 @@
-﻿namespace ASI.Basecode.WebApp.Models
+﻿namespace PogoAdmin.Models
 {
     /// <summary>
     /// Token Authentication

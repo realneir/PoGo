@@ -10,7 +10,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 
-namespace ASI.Basecode.WebApp.Mvc
+namespace PogoAdmin.Mvc
 {
     /// <summary>
     /// Declare ControllerBase.

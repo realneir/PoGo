@@ -4,7 +4,7 @@ using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// TokenProvider

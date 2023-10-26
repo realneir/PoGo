@@ -1,8 +1,8 @@
-﻿using ASI.Basecode.WebApp.Models;
+﻿using PogoAdmin.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace ASI.Basecode.WebApp.Extensions.Configuration
+namespace PogoAdmin.Extensions.Configuration
 {
     /// <summary>
     /// Configuration Extension

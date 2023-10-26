@@ -1,9 +1,9 @@
-﻿using ASI.Basecode.WebApp.Models;
-using ASI.Basecode.Resources.Constants;
+﻿using PogoAdmin.Models;
+using Resources.Constants;
 using Microsoft.IdentityModel.Tokens;
 using System;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// Token provider factory

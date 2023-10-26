@@ -1,13 +1,13 @@
-﻿using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Models;
-using Basecode.Data.Repositories;
+﻿using Data.Interfaces;
+using Data.Models;
+using Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASI.Basecode.Data.Repositories
+namespace Data.Repositories
 {
     public class UserRepository : BaseRepository, IUserRepository
     {

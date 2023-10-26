@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ASI.Basecode.Data.Models
+namespace Data.Models
 {
     public partial class User
     {
