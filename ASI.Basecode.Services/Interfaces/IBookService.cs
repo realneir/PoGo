@@ -1,18 +1,14 @@
 ﻿using ASI.Basecode.Data.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ASI.Basecode.Services.Interfaces
+using ASI.Basecode.Services.ServiceModels;
+namespace ASI.Basecode.WebApp.Services
 {
     public interface IBookService
     {
-        Task<Book> GetBookByIdAsync(int id);
-        Task<IEnumerable<Book>> GetAllBooksAsync();
-        Task<Book> CreateBookAsync(Book book);
-        Task<Book> UpdateBookAsync(Book book);
-        Task DeleteBookAsync(int id);
+        IEnumerable<BookViewModel> GetAllBooks();
+        BookViewModel GetBookById(int bookID);
+        void AddBook(BookViewModel model);
+        void UpdateBook(BookViewModel model);
+        void DeleteBook(int bookID);
     }
 }

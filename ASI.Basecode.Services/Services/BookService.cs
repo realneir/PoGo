@@ -1,48 +1,64 @@
-using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Models;
+using ASI.Basecode.Data.Repositories;
+using AutoMapper;
 using ASI.Basecode.Services.Interfaces;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using ASI.Basecode.Services.ServiceModels;
+using ASI.Basecode.Data.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ASI.Basecode.WebApp.Services;
+using System.IO;
 
 namespace ASI.Basecode.Services.Services
 {
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
+        private readonly IMapper _mapper;
 
-        public BookService(IBookRepository bookRepository)
+        public BookService(IBookRepository bookRepository, IMapper mapper)
         {
             _bookRepository = bookRepository;
+            _mapper = mapper;
         }
 
-        public async Task<Book> CreateBookAsync(Book book)
+        public IEnumerable<BookViewModel> GetAllBooks()
         {
-            return await _bookRepository.AddAsync(book);
+            var books = _bookRepository.GetAllBooks();
+            return _mapper.Map<IEnumerable<BookViewModel>>(books);
         }
 
-        public async Task<Book> GetBookByIdAsync(int id)
+        public BookViewModel GetBookById(int bookID)
         {
-            return await _bookRepository.GetByIdAsync(id);
+            var book = _bookRepository.GetBookById(bookID);
+            return _mapper.Map<BookViewModel>(book);
         }
 
-        public async Task<IEnumerable<Book>> GetAllBooksAsync()
+        public void AddBook(BookViewModel model)
         {
-            return await _bookRepository.GetAllAsync();
+            if (!_bookRepository.BookExists(model.bookID))
+            {
+                var book = _mapper.Map<Book>(model);
+                _bookRepository.AddBook(book);
+            }
+            else
+            {
+                throw new InvalidDataException("Book with the provided ID already exists.");
+            }
         }
 
-        public async Task<Book> UpdateBookAsync(Book book)
+        public void UpdateBook(BookViewModel model)
         {
-            return await _bookRepository.UpdateAsync(book);
+            if (_bookRepository.BookExists(model.bookID))
+            {
+                var existingBook = _bookRepository.GetBookById(model.bookID);
+                _mapper.Map(model, existingBook);
+                _bookRepository.UpdateBook(existingBook);
+            }
         }
 
-        public async Task DeleteBookAsync(int id)
+        public void DeleteBook(int bookID)
         {
-            await _bookRepository.DeleteAsync(id);
+            _bookRepository.DeleteBook(bookID);
         }
     }
 }

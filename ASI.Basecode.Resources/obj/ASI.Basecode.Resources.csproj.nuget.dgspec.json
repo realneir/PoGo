@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {}
+    "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
+    "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "projectUniqueName": "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
         "projectName": "ASI.Basecode.Resources",
-        "projectPath": "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
-        "packagesPath": "C:\\Users\\julju\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\obj\\",
+        "projectPath": "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+        "packagesPath": "C:\\Users\\justin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\julju\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,17 +45,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

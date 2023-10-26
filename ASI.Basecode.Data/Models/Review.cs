@@ -8,15 +8,16 @@ namespace ASI.Basecode.Data.Models
 {
     class Review
     {
-        public int ReviewNum { get; set; }
-        public int BookID { get; set; }
+        public int reviewID { get; set; }
       
-        public string Content { get; set; }
+        public string content { get; set; }
         
-        public int Rating { get; set; }
-        public string ReviewName { get; set; }
+        public int rating { get; set; }
+        public string reviewName { get; set; }
        
-        public string ReviewEmail { get; set; }
+        public string reviewEmail { get; set; }
+        [ForeignKey("Author")]
+        public int bookID { get; set; }
         public virtual Book Book { get; set; }
     }
 }
