@@ -10,9 +10,17 @@ namespace ASI.Basecode.Services.ServiceModels
 {
     public class BookViewModel
     {
-        [JsonPropertyName("bookId")]
-        [Required(ErrorMessage = "Book Id is required.")]
-        public string bookId { get; set; }
+        [JsonPropertyName("bookID")]
+        [Required(ErrorMessage = "Book ID is required.")]
+        public string bookID { get; set; }
+
+        [JsonPropertyName("authorId")]
+        [Required(ErrorMessage = "Author is required.")]
+        public int authorID { get; set; }
+
+        [JsonPropertyName("genreID")]
+        [Required(ErrorMessage = "Genre is required.")]
+        public int genreID { get; set; }
 
         [JsonPropertyName("title")]
         [Required(ErrorMessage = "Book title is required.")]
@@ -24,6 +32,6 @@ namespace ASI.Basecode.Services.ServiceModels
 
         [JsonPropertyName("pubYear")]
         [Required(ErrorMessage = "Publishing year is required.")]
-        public DateOnly pubYear { get; set; }
+        public DateTime pubYear { get; set; }
     }
 }

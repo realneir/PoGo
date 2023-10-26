@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z8nKBmQ56+OXiYmasOfth684Pj6QZJ3z9vG7G6f9maHfr/I1jR7JV/csuEe5n9dGDaaqYakrbmXkDQ75+zkNyQ==",
+  "dgSpecHash": "tFIbCIzkI9hEJiFn6GLKO/2M9gDgBwOWBLg989RrRc0WD/BjDawrBaQ5mR/jwQE4FH7G9wCiM5Ptv6YmhKpNvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
+  "projectFilePath": "C:\\Users\\justin\\Source\\Repos\\PoGo\\ASI.Basecode.Resources\\ASI.Basecode.Resources.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\julju\\source\\repos\\PoGo_Alliance\\ASI.Basecode.Resources\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

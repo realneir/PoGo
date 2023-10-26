@@ -8,8 +8,8 @@ namespace ASI.Basecode.Data.Models
 {
     public class Genre
     {
-        public int GenreID { get; set; }
-        public string GenreName { get; set; }
+        public int genreID { get; set; }
+        public string genreName { get; set; }
 
 
         public virtual ICollection<Book> Books { get; set; }

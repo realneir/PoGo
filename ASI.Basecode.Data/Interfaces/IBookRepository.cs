@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿﻿using ASI.Basecode.Data.Models;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using ASI.Basecode.Data.Models;
-namespace ASI.Basecode.Data.Interfaces
+
+namespace Data.Interfaces
 {
     public interface IBookRepository
     {
-        Task<Book> GetByIdAsync(int id);
-        Task<IEnumerable<Book>> GetAllAsync();
-        Task<Book> AddAsync(Book book);
-        Task<Book> UpdateAsync(Book book);
-        Task DeleteAsync(int id);
+        IQueryable<Book> GetAllBooks();
+        Task<Book> GetBookById(int bookID);
+        void AddBook(Book book);
+        void UpdateBook(Book book);
+        void DeleteBook(int bookID);
+        bool BookExists(int bookID);
     }
 }

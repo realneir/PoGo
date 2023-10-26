@@ -1,60 +1,55 @@
 using ASI.Basecode.Data.Interfaces;
+using Basecode.Data.Repositories;
+using Data.Interfaces;
 using ASI.Basecode.Data.Models;
-using ASI.Basecode.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ASI.Basecode.Data;
 
 namespace ASI.Basecode.Data.Repositories
 {
-    public class BookRepository : IBookRepository
+    public class BookRepository : BaseRepository, IBookRepository
     {
-        private readonly AsiBasecodeDBContext _context;
-
-        public BookRepository(AsiBasecodeDBContext context)
+        public BookRepository(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            _context = context;
         }
 
-        public async Task<Book> AddAsync(Book book)
+        public IQueryable<Book> GetAllBooks()
         {
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
-            return book;
+            return this.GetDbSet<Book>().Include(b => b.Author); ;
+        }
+        public Task<Book> GetBookById(int bookID)
+        {
+            var book = this.GetDbSet<Book>().FirstOrDefault(b => b.bookID == bookID);
+            return Task.FromResult(book);
         }
 
-        public async Task<Book> GetByIdAsync(int id)
+
+        public bool BookExists(int bookID)
         {
-            return await _context.Books
-                .Include(b => b.Author)
-                //.Include(b => b.Reviews)
-                .FirstOrDefaultAsync(b => b.bookID == id);
+            return this.GetDbSet<Book>().Any(x => x.Id == bookID);
         }
 
-        public async Task<IEnumerable<Book>> GetAllAsync()
+        public void AddBook(Book book)
         {
-            return await _context.Books.ToListAsync();
+            this.GetDbSet<Book>().Add(book);
+            UnitOfWork.SaveChanges();
         }
 
-        public async Task<Book> UpdateAsync(Book book)
+        public void UpdateBook(Book book)
         {
-            _context.Entry(book).State = EntityState.Modified;
-            await _context.SaveChangesAsync();
-            return book;
+            this.SetEntityState(book, EntityState.Modified);
+            UnitOfWork.SaveChanges();
         }
 
-        public async Task DeleteAsync(int id)
+        public void DeleteBook(int bookID)
         {
-            var book = await GetByIdAsync(id);
+            var book = this.GetDbSet<Book>().Find(bookID);
             if (book != null)
             {
-                _context.Books.Remove(book);
-                await _context.SaveChangesAsync();
+                this.GetDbSet<Book>().Remove(book);
+                UnitOfWork.SaveChanges();
             }
         }
+
     }
 }

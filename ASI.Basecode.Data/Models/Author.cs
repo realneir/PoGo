@@ -10,7 +10,6 @@ namespace ASI.Basecode.Data.Models
     {
         public int authorID { get; set; }
         public string firstName { get; set; }
-        public string middleName { get; set; }
         public string lastName { get; set; }
 
 
