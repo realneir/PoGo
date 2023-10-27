@@ -1,13 +1,13 @@
-﻿using ASI.Basecode.Data;
-using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Repositories;
-using ASI.Basecode.Resources.Constants;
-using ASI.Basecode.Services.Interfaces;
-using ASI.Basecode.Services.Manager;
-using ASI.Basecode.Services.Services;
-using ASI.Basecode.WebApp.Authentication;
-using ASI.Basecode.WebApp.Extensions.Configuration;
-using ASI.Basecode.WebApp.Models;
+﻿using Data;
+using Data.Interfaces;
+using Data.Repositories;
+using PogoAdmin.Resources.Constants;
+using PogoAdmin.Services.Interfaces;
+using PogoAdmin.Services.Manager;
+using PogoAdmin.Services.Services;
+using PogoAdmin.Authentication;
+using PogoAdmin.Extensions.Configuration;
+using PogoAdmin.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Features;
@@ -22,7 +22,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace ASI.Basecode.WebApp
+namespace PogoAdmin
 {
     /// <summary>
     /// For configuring services on application startup.

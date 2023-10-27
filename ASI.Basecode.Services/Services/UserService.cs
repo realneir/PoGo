@@ -1,13 +1,13 @@
-﻿using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Models;
-using ASI.Basecode.Services.Interfaces;
-using ASI.Basecode.Services.Manager;
-using ASI.Basecode.Services.ServiceModels;
+﻿using Data.Interfaces;
+using Data.Models;
+using Services.Interfaces;
+using Services.Manager;
+using Services.ServiceModels;
 using AutoMapper;
 using System;
 using System.IO;
 using System.Linq;
-using static ASI.Basecode.Resources.Constants.Enums;
+using static Resources.Constants.Enums;
 
 namespace ASI.Basecode.Services.Services
 {

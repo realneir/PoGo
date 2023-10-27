@@ -1,6 +1,6 @@
 using System;
 
-namespace ASI.Basecode.WebApp.Models
+namespace PogoAdmin.Models
 {
     public class ErrorViewModel
     {

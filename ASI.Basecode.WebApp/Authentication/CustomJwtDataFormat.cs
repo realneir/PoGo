@@ -1,5 +1,5 @@
-﻿using ASI.Basecode.WebApp.Extensions.Configuration;
-using ASI.Basecode.Resources.Constants;
+﻿using PogoAdmin.Extensions.Configuration;
+using Resources.Constants;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -9,7 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// CustomJwtDataFormat

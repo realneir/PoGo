@@ -1,14 +1,15 @@
-using ASI.Basecode.Data.Repositories;
+using Data.Repositories;
 using AutoMapper;
-using ASI.Basecode.Services.Interfaces;
-using ASI.Basecode.Services.ServiceModels;
-using ASI.Basecode.Data.Models;
+using Services.Interfaces;
+using Services.ServiceModels;
+using Data.Models;
 using System;
 using System.Collections.Generic;
-using ASI.Basecode.WebApp.Services;
+using PogoAdmin.Services;
 using System.IO;
+using Data.Interfaces;
 
-namespace ASI.Basecode.Services.Services
+namespace Services.Services
 {
     public class BookService : IBookService
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace ASI.Basecode.WebApp.Models
+namespace PogoAdmin.Models
 {
     /// <summary>
     /// Login View Model

@@ -1,11 +1,11 @@
-using ASI.Basecode.Data.Interfaces;
-using Basecode.Data.Repositories;
 using Data.Interfaces;
-using ASI.Basecode.Data.Models;
+using Data.Repositories;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace ASI.Basecode.Data.Repositories
+namespace Data.Repositories
 {
     public class BookRepository : BaseRepository, IBookRepository
     {

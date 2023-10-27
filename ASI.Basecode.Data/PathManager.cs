@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace ASI.Basecode.Data
+namespace Data
 {
     /// <summary>
     /// Path Manager

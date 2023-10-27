@@ -1,0 +1,8 @@
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.csproj.AssemblyReference.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.AssemblyInfoInputs.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.AssemblyInfo.cs
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.csproj.CoreCompileInputs.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.RazorAssemblyInfo.cache
+C:\Users\julju\Source\Repos\PoGo\ASI.Basecode.WebApp\obj\Debug\net7.0\PogoAdmin.RazorAssemblyInfo.cs

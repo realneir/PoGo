@@ -1,11 +1,11 @@
-﻿using ASI.Basecode.WebApp.Mvc;
+﻿using PogoAdmin.Mvc;
 using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace ASI.Basecode.WebApp.Controllers
+namespace PogoAdmin.Controllers
 {
     /// <summary>
     /// Home Controller

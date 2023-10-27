@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace ASI.Basecode.Services
+namespace Services
 {
     /// <summary>
     /// Service Base class implementation

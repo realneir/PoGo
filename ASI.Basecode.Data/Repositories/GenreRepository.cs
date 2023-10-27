@@ -1,11 +1,10 @@
-﻿using ASI.Basecode.Data.Interfaces;
-using Basecode.Data.Repositories;
-using Data.Interfaces;
-using ASI.Basecode.Data.Models;
+﻿using Data.Interfaces;
+using Data.Repositories;
+using Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
-namespace ASI.Basecode.Data.Repositories
+namespace Data.Repositories
 {
     public class GenreRepository : BaseRepository, IGenreRepository
     {

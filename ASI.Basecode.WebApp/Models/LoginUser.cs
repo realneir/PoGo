@@ -1,7 +1,7 @@
-﻿using ASI.Basecode.Data.Models;
-using static ASI.Basecode.Resources.Constants.Enums;
+﻿using Data.Models;
+using static Resources.Constants.Enums;
 
-namespace ASI.Basecode.WebApp.Models
+namespace PogoAdmin.Models
 {
     /// <summary>
     /// Login User Model

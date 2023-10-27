@@ -1,7 +1,7 @@
-﻿using ASI.Basecode.Services.Models;
+﻿using Services.Models;
 using System.Collections.Generic;
 
-namespace ASI.Basecode.WebApp.Services
+namespace PogoAdmin.Services
 {
     public interface IAuthorService
     {

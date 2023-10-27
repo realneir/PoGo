@@ -1,7 +1,7 @@
-﻿using ASI.Basecode.Data.Models;
+﻿using Data.Models;
 using System.Collections.Generic;
-using ASI.Basecode.Services.ServiceModels;
-namespace ASI.Basecode.WebApp.Services
+using Services.ServiceModels;
+namespace PogoAdmin.Services
 {
     public interface IBookService
     {

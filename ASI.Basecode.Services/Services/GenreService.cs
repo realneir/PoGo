@@ -1,14 +1,14 @@
-﻿using ASI.Basecode.Services.Models;
+﻿using Services.Models;
 using AutoMapper;
-using ASI.Basecode.Data.Interfaces;
-using ASI.Basecode.Data.Models;
+using Data.Interfaces;
+using Data.Models;
 using System;
 using System.Collections.Generic;
-using ASI.Basecode.WebApp.Services;
-using ASI.Basecode.Data.Repositories;
+using PogoAdmin.Services;
+using Data.Repositories;
 using System.IO;
 
-namespace ASI.Basecode.Services.Services
+namespace PogoAdmin.Services.Services
 {
     public class GenreService : IGenreService
     {

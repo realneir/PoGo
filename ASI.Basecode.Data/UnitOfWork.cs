@@ -1,8 +1,8 @@
 ﻿using System;
-using ASI.Basecode.Data.Interfaces;
+using Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace ASI.Basecode.Data
+namespace Data
 {
 
     /// <summary>

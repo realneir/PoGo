@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ASI.Basecode.Data.Models
+namespace Data.Models
 {
     public class Book
     {

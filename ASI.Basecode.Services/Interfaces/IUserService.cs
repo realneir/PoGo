@@ -1,8 +1,8 @@
-﻿using ASI.Basecode.Data.Models;
-using ASI.Basecode.Services.ServiceModels;
-using static ASI.Basecode.Resources.Constants.Enums;
+﻿using Data.Models;
+using Services.ServiceModels;
+using static Resources.Constants.Enums;
 
-namespace ASI.Basecode.Services.Interfaces
+namespace Services.Interfaces
 {
     public interface IUserService
     {

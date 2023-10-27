@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ASI.Basecode.Data.Models
+namespace Data.Models
 {
     public class Author
     {

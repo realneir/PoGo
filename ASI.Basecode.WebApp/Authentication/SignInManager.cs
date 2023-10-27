@@ -4,16 +4,16 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading.Tasks;
-using ASI.Basecode.WebApp.Extensions.Configuration;
-using ASI.Basecode.WebApp.Models;
-using ASI.Basecode.Resources.Constants;
-using ASI.Basecode.Data.Models;
+using PogoAdmin.Extensions.Configuration;
+using PogoAdmin.Models;
+using Resources.Constants;
+using Data.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
-using static ASI.Basecode.Resources.Constants.Enums;
+using static Resources.Constants.Enums;
 
-namespace ASI.Basecode.WebApp.Authentication
+namespace PogoAdmin.Authentication
 {
     /// <summary>
     /// SignInManager

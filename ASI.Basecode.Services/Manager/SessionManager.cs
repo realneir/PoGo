@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace ASI.Basecode.Services.Manager
+namespace Services.Manager
 {
     /// <summary>
     /// Session Manager

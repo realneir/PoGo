@@ -1,4 +1,4 @@
-﻿namespace ASI.Basecode.Resources.Constants
+﻿namespace Resources.Constants
 {
     /// <summary>
     /// Class for variables with constant values
